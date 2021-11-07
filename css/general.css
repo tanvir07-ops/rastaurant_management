@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  /* ami 1rem = 10px dorechi (10/16 = 0.625) = 0.625*100 = 62.5% */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #555;
+  line-height: 1;
+  font-weight: 400;
+
+  /* by-default font-weight:400 ei thake; */
+
+  /* by default line-height aro beshi thake tai ami line-height:1 kore diyechi jate kom kore spacing thake prottekti line er moddeh */
+}
+
+/* *******Reusable code: ******* */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4.6rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  /* er means hocceh jotokkhon obdi grid er last-child nah hocceh totokkhon obdi ekti grid er pore arekti grid 9.6rem kore jayga nibe */
+  margin-bottom: 9.6rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  color: #333;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2rem;
+  margin-bottom: 3.2rem;
+  margin-top: 1.2rem;
+}
+
+.subheading {
+  display: block;
+  color: #cf711f;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 100px;
+  /* jehetu sob button er main class holo btn tai ei btn ei translate ti dite hobe and ei translate tokhon ei kaaj korbe jokhon btn ti hover kora hobe! */
+  transition: all 0.5s;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67a22;
+
+  box-shadow: 0px 10px 24px rgba(230, 122, 34, 0.5),
+    0px -10px 24px rgba(230, 122, 34, 0.5);
+
+  color: #fff !important;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+  color: #fff !important;
+  box-shadow: 0px 10px 24px rgba(230, 122, 34, 0.5),
+    0px -10px 24px rgba(230, 122, 34, 0.5);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: #555;
+  background-color: #fff !important;
+  border: 3px solid #fff !important;
+  margin-left: 1rem;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  color: #555;
+  background-color: #fdf2e9 !important;
+  border: 3px solid #fff;
+}
+
+*:focus {
+  /* er means hocceh jokhon amra kono link e ba form er moddeh input  field e click korbo tokhon blue color er outline dekhabe jah shundor nah and ei blue color outline remove er jonne:: */
+  outline: none !important;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.589);
+}
+
+.link:link,
+.link:visited {
+  color: #51cf66;
+  text-decoration: none;
+
+  /* eikhane currentColor er means hocceh je border-bottom tio color:#51cf66;er motoi hobe */
+
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.5s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  /* hover korle jate border-bottom remove hoy tar jonne trasparent use korte hobe: */
+  border-bottom: 1px solid transparent;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* ******************************* */
