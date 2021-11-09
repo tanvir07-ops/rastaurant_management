@@ -14,6 +14,7 @@
 
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -23,7 +24,7 @@
 .main-nav-list {
   display: flex;
   list-style: none;
-  gap: 3.4rem;
+  gap: 4.8rem;
   justify-items: center;
   align-items: center;
 }
@@ -50,6 +51,28 @@
   padding: 1.2rem 2.4rem;
   color: #0c0300 !important;
   border-radius: 100px;
+}
+
+/* for mobile nav */
+
+.btn-mobile-nav {
+  background: none !important;
+  border: none !important;
+
+  /* karon amar bydefault kono menu dorkar naei karon et shudu projojjoh hobe tablet and phone er belay: */
+
+  display: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem !important;
+  width: 4.8rem !important;
+  color: #333 !important;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
 }
 
 /* navigation end: */
@@ -343,7 +366,7 @@
 
 /* ******************************** */
 
-/* *************Testimonials and gallery************** */
+/* *************Testimonials and h************** */
 .testimonials {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -358,7 +381,8 @@
 }
 
 .testimonial-container {
-  padding: 9.6rem;
+  padding: 9.6rem !important;
+  align-self: center;
 }
 
 .testimonial-img {
@@ -515,7 +539,7 @@
 
 /* ******call to action section: */
 .section-cta {
-  padding: 9.8rem 0;
+  padding: 4.8rem 0 12.8rem 0;
 }
 .cta {
   display: grid;
@@ -673,19 +697,25 @@
 
 .contacts {
   font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
-.contacts-flex {
+.address {
+  margin-bottom: 2.4rem;
+}
+
+/* .contacts-flex {
   display: flex;
   flex-direction: column;
   gap: 4.5rem;
-}
+} */
 
-.contacts-flex-flex {
+/* .contacts-flex-flex {
   display: flex;
   flex-direction: column;
   gap: 4.2rem;
-}
+} */
 
 /* .contacts-flex p:last-child {
   margin-bottom: 1.6rem;

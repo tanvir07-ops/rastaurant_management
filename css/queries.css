@@ -1,0 +1,222 @@
+/* all time em e likhbo media query teh:
+
+1 em = 1rem = 16px;
+
+
+
+
+*/
+
+/* small leptop: 1344 px = 84em */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem !important;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* for landscape tablet devices (max-width:1200px or 1200/16 = 75em) */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25% !important;
+  }
+
+  .grid {
+    column-gap: 4.8rem !important ;
+    row-gap: 6.4rem !important;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem !important;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem !important;
+  }
+
+  .header {
+    padding: 0 3.2rem !important;
+  }
+
+  .hero {
+    gap: 4.8 !important;
+  }
+  .main-nav-list {
+    gap: 3.2rem !important;
+  }
+
+  .testimonial-container {
+    padding: 9.6rem 3.2rem 9.6rem 3.2rem !important;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px/16px = 0.5*100 = 50% */
+    font-size: 50% !important;
+  }
+  .hero {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-img {
+    width: 60% !important;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center !important;
+  }
+  .delivered-meals {
+    justify-content: center !important;
+    margin-top: 3.2rem !important;
+  }
+  .logos img {
+    height: 2.4rem !important;
+  }
+  .step-number {
+    font-size: 7.2rem !important;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .meal-title {
+    font-size: 2rem !important;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr !important;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+  /* 
+  .pricing-plan--starter .plan-signup {
+    font-size: 6.2rem !important;
+  } */
+
+  .pricing-plan--starter {
+    /* padding: 1.2rem 2.4rem !important;
+    font-size: 1.6rem !important; */
+    width: 100% !important;
+  }
+
+  .pricing-plan--complete {
+    width: 100% !important;
+  }
+
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* mobile-nav: */
+
+  .btn-mobile-nav {
+    display: block !important;
+  }
+
+  .main-nav {
+    position: absolute !important;
+    background-color: #fff !important;
+    width: 100% !important;
+    height: 100vh !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    transform: translateX(100%) !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+
+    transition: all 0.5s ease-in !important;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+
+    transform: translateX(0) !important;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none !important;
+  }
+
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block !important;
+  }
+  .main-nav-list {
+    flex-direction: column !important;
+    gap: 4.8rem !important;
+  }
+
+  .nav-main-link {
+    font-size: 2.4rem !important;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**********************/
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .diets {
+    justify-self: center !important;
+    grid-column: 1/-1 !important;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem !important;
+  }
+
+  .pricing-plan {
+    width: 100% !important;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+
+    /* niche 6ti column er 3ti column nibe address ar logoti: */
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+
+    margin-bottom: 3.2rem;
+  }
+}
