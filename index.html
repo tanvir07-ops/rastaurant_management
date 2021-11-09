@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- for smooth scrolling using jquery: -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- for ionicons: -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Omnifood Project</title>
@@ -28,13 +35,17 @@
       <header class="header">
         <a href="#"> <img src="img/omnifood1.png" alt="" class="logo" /></a>
 
-        <nav class="main-nav">
+        <nav class="main-nav" id="main-nav">
           <ul class="main-nav-list">
-            <li><a href="#" class="nav-main-link">How it works</a></li>
-            <li><a href="#" class="nav-main-link">Meals</a></li>
-            <li><a href="#" class="nav-main-link">Testimonials</a></li>
-            <li><a href="#" class="nav-main-link">Pricing</a></li>
-            <li><a href="#" class="nav-main-link active">Try for free</a></li>
+            <li><a href="#how" class="nav-main-link">How it works</a></li>
+            <li><a href="#meals" class="nav-main-link">Meals</a></li>
+            <li>
+              <a href="#testimonials" class="nav-main-link">Testimonials</a>
+            </li>
+            <li><a href="#pricing" class="nav-main-link">Pricing</a></li>
+            <li>
+              <a href="#free" class="nav-main-link active">Try for free</a>
+            </li>
           </ul>
         </nav>
 
@@ -59,10 +70,12 @@
               nutritional needs.
             </p>
 
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#pricing" class="btn btn--full margin-right-sm"
               >Start Eating Well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#featured-in" class="btn btn--outline"
+              >Learn more &darr;</a
+            >
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/rifat.jpg" alt="" />
@@ -87,7 +100,7 @@
 
       <!-- for section featured-in(mane e holo kon kon brand amader theke product ney ba partnenrship e ase:) -->
 
-      <section class="section-featured">
+      <section class="section-featured" id="featured-in">
         <div class="container">
           <h2 class="heading-featured-in">As featured in</h2>
 
@@ -102,7 +115,7 @@
       </section>
 
       <!-- for section how: -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
 
@@ -210,7 +223,7 @@
             </div>
           </div>
 
-          <div class="meal">
+          <div class="meal" id="meals">
             <img src="img/meals/meal-2.jpg" alt="" class="meal-img" />
             <div class="meal-content">
               <div class="meal-tags">
@@ -285,7 +298,7 @@
 
       <!-- for section testimonials -->
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonial-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it you can't go back</h2>
@@ -393,7 +406,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">pricing</span>
           <h2 class="heading-secondary">
@@ -508,7 +521,7 @@
 
       <!-- cta(call to action mane e holo form ! jake cta o bola jay:) -->
 
-      <section class="section-cta">
+      <section class="section-cta" id="free">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -646,4 +659,7 @@
       </div>
     </footer>
   </body>
+
+  <!-- for js: -->
+  <script src="js/script.js"></script>
 </html>
