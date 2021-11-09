@@ -220,3 +220,74 @@
     margin-bottom: 3.2rem;
   }
 }
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr !important;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.8rem 1.6rem !important;
+  }
+
+  .section-hero {
+    padding: 2.4rem 1.6 !important;
+  }
+  .hero-img {
+    width: 80% !important;
+  }
+
+  .logos img {
+    height: 1.4rem !important;
+  }
+
+  .container .step-img-box:nth-child(2) {
+    /* container er 2number child ei step-img-box ti ase abar 6number child eo ase! */
+    grid-row: 1 !important;
+  }
+
+  .container .step-img-box:nth-child(6) {
+    grid-row: 5 !important;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .pricing-plan {
+    width: 60vw !important;
+  }
+  .cta {
+    grid-template-columns: 1fr !important;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem !important;
+  }
+
+  .cta-form div:nth-child(3),
+  .cta-form div:nth-child(1),
+  .cta-form div:nth-child(2) {
+    grid-column: 1/-1 !important;
+  }
+  .cta-form .btn {
+    grid-column: 1/-1 !important;
+    margin-top: 2.4rem !important;
+  }
+}
