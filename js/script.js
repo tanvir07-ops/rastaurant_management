@@ -1,7 +1,7 @@
 ctaForm = document.getElementById("cta-form");
 ctaBtn = document.getElementById("cta-btn");
 
-ctaForm.addEventListener("click", function (e) {
+ctaBtn.addEventListener("click", function (e) {
   ctaForm.innerText = `Thank You for filling this form ✌✌!`;
   ctaForm.style.backgroundColor = "#a01877";
   ctaForm.style.paddingTop = "12px";
@@ -14,7 +14,6 @@ ctaForm.addEventListener("click", function (e) {
   ctaForm.style.textAlign = "center";
   ctaForm.style.width = "100%";
 });
-
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
