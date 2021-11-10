@@ -96,3 +96,14 @@ $("#main-nav .nav-main-link, .btn").on("click", function (event) {
     );
   }
 });
+
+//Sticky menu background(nav er background er opacity komiye doeaa jokhon ami 150px y-axis borabor niche nambo)
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 150) {
+    document.querySelector(".navbar").style.opacity = 0.9;
+  } else if (window.scrollY > 150) {
+    document.querySelector(".main-nav").style.opacity = 0.5;
+  } else {
+    document.querySelector(".navbar", ".main-nav").style.opacity = 1;
+  }
+});

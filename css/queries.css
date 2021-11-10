@@ -137,7 +137,15 @@
 
   .main-nav {
     position: absolute !important;
-    background-color: #fff !important;
+
+    /* backdrop filter er maddome mobile nav ti blur korechi! and linear-gradient er moddeh alltime rgba dite hobe jate kore lower transpareci add hoy! */
+
+    backdrop-filter: blur(10px) !important;
+
+    background: linear-gradient(
+      rgba(25, 161, 134, 0.726),
+      rgba(242, 207, 69, 0.733)
+    ) !important;
     width: 100% !important;
     height: 100vh !important;
     top: 0 !important;

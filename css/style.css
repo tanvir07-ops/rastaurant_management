@@ -17,6 +17,20 @@
   position: relative;
 }
 
+.navbar {
+  position: fixed;
+
+  width: 100%;
+  top: 0px;
+  bottom: 0;
+  height: 9rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: linear-gradient(#19a186, #f2cf43);
+
+  z-index: 999;
+}
+
 .logo {
   height: 11rem;
 }
@@ -87,7 +101,8 @@
 .hero {
   max-width: 130rem;
   padding: 0 3.2rem;
-  margin: 0 auto;
+  margin: 10rem auto;
+  margin-bottom: 5rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
