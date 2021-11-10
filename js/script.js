@@ -1,3 +1,20 @@
+ctaForm = document.getElementById("cta-form");
+ctaBtn = document.getElementById("cta-btn");
+
+ctaForm.addEventListener("click", function (e) {
+  ctaForm.innerText = `Thank You for filling this form ✌✌!`;
+  ctaForm.style.backgroundColor = "#a01877";
+  ctaForm.style.paddingTop = "12px";
+  ctaForm.style.fontSize = "20px";
+  ctaForm.style.color = "#fff";
+  ctaForm.style.paddingBottom = "12px";
+  ctaForm.style.paddingLeft = "24px";
+  ctaForm.style.paddingRight = "24px";
+  ctaForm.style.borderRadius = "100px";
+  ctaForm.style.textAlign = "center";
+  ctaForm.style.width = "100%";
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
@@ -107,3 +124,5 @@ window.addEventListener("scroll", function () {
     document.querySelector(".navbar", ".main-nav").style.opacity = 1;
   }
 });
+
+// for cta:
